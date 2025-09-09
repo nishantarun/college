@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        background-color: rgb(20, 20, 20);
+      }
+
+      .container {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box {
+        background-color: rgb(220, 20, 93);
+        border-radius: 5px;
+        height: 50px;
+        width: 200px;
+        transition: all 1s ease;
+      }
+
+      .box:hover {
+        height: 400px;
+        background-color: rgb(156, 43, 226);
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
