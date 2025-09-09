@@ -23,13 +23,24 @@
         height: 50px;
         width: 200px;
         transition: all 1s ease;
+        transition-delay: 1s;
+      }
+
+      @keyframes colorAnimation {
+        33% {
+          background-color: red;
+        }
+        66% {
+          background-color: purple;
+        }
+        100% {
+          background-color: yellow;
+        }
       }
 
       .box:hover {
-        height: 400px;
-        background-color: rgb(156, 43, 226);
-        border-top-left-radius: 100px;
-        border-top-right-radius: 100px;
+        height: 200px;
+        animation: colorAnimation 5s ease 1s;
       }
     </style>
   </head>
