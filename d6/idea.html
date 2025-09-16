@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sunny Bites - Warm Cozy Menu with Prices</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom smooth scale and shadow on hover */
+    .hover-scale {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .hover-scale:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 15px rgba(249, 168, 37, 0.3); /* warm shadow */
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-amber-50 via-yellow-100 to-yellow-50 min-h-screen flex flex-col">
+
+  <header class="bg-yellow-300 shadow-md py-6 sticky top-0 z-50">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+      <h1 class="text-3xl font-semibold text-amber-900 drop-shadow-md select-none">Sunny Bites</h1>
+      <nav class="mt-3 md:mt-0 space-x-8 text-amber-700 font-medium uppercase tracking-wide">
+        <a href="#starters" class="hover:text-amber-900 transition-colors duration-300">Starters</a>
+        <a href="#main-course" class="hover:text-amber-900 transition-colors duration-300">Main Course</a>
+        <a href="#beverages" class="hover:text-amber-900 transition-colors duration-300">Beverages</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-6 py-10 flex-grow">
+
+    <section class="mb-16" id="starters">
+      <h2 class="text-4xl font-semibold text-amber-900 mb-8 border-b-4 border-yellow-400 pb-2 select-none">Starters</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <article class="bg-yellow-100 rounded-lg p-4 shadow hover-scale cursor-pointer flex flex-col">
+          <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=400&q=80" alt="Avocado Bruschetta" class="rounded-lg w-full h-48 object-cover mb-4" />
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-xl font-semibold text-amber-900">Avocado Bruschetta</h3>
+            <span class="text-lg font-semibold text-amber-800">$7.99</span>
+          </div>
+          <p class="text-amber-800 text-sm leading-relaxed flex-grow">Smashed ripe avocado on toasted artisan bread with cherry tomatoes and basil.</p>
+        </article>
+        <article class="bg-yellow-100 rounded-lg p-4 shadow hover-scale cursor-pointer flex flex-col">
+          <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb41?auto=format&fit=crop&w=400&q=80" alt="Creamy Pumpkin Soup" class="rounded-lg w-full h-48 object-cover mb-4" />
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-xl font-semibold text-amber-900">Creamy Pumpkin Soup</h3>
+            <span class="text-lg font-semibold text-amber-800">$6.50</span>
+          </div>
+          <p class="text-amber-800 text-sm leading-relaxed flex-grow">Smooth pumpkin soup with warm spices and fresh cream.</p>
+        </article>
+        <article class="bg-yellow-100 rounded-lg p-4 shadow hover-scale cursor-pointer flex flex-col">
+          <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=400&q=80" alt="Honey Glazed Carrots" class="rounded-lg w-full h-48 object-cover mb-4" />
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-xl font-semibold text-amber-900">Honey Glazed Carrots</h3>
+            <span class="text-lg font-semibold text-amber-800">$5.75</span>
+          </div>
+          <p class="text-amber-800 text-sm leading-relaxed flex-grow">Roasted carrots drizzled with honey and sprinkled with fresh thyme.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="mb-16" id="main-course">
+      <h2 class="text-4xl font-semibold text-amber-900 mb-8 border-b-4 border-yellow-400 pb-2 select-none">Main Course</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <article class="bg-yellow-100 rounded-lg p-4 shadow hover-scale cursor-pointer flex flex-col">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Herb Roasted Chicken" class="rounded-lg w-full h-48 object-cover mb-4" />
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-xl font-semibold text-amber-900">Herb Roasted Chicken</h3>
+            <span class="text-lg font-semibold text-amber-800">$14.99</span>
+          </div>
+          <p class="text-amber-800 text-sm leading-relaxed flex-grow">Juicy chicken roasted with fresh herbs, garlic, and lemon zest.</p>
+        </article>
+        <article class="bg-yellow-100 rounded-lg p-4 shadow hover-scale cursor-pointer flex flex-col">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Butternut Squash Risotto" class="rounded-lg w-full h-48 object-cover mb-4" />
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-xl font-semibold text-amber-900">Butternut Squash Risotto</h3>
+            <span class="text-lg font-semibold text-amber-800">$13.25</span>
+          </div>
+          <p class="text-amber-800 text-sm leading-relaxed flex-grow">Creamy risotto with roasted butternut squash and sage butter.</p>
+        </article>
+        <article class="bg-yellow-100 rounded-lg p-4 shadow hover-scale cursor-pointer flex flex-col">
+          <img src="https://images.unsplash.com/photo-1617191514104-ff6180547b64?auto=format&fit=crop&w=400&q=80" alt="Honey Mustard Glazed Salmon" class="rounded-lg w-full h-48 object-cover mb-4" />
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-xl font-semibold text-amber-900">Honey Mustard Glazed Salmon</h3>
+            <span class="text-lg font-semibold text-amber-800">$17.75</span>
+          </div>
+          <p class="text-amber-800 text-sm leading-relaxed flex-grow">Tender salmon with a honey-mustard glaze, served with sautéed vegetables.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="mb-16" id="beverages">
+      <h2 class="text-4xl font-semibold text-amber-900 mb-8 border-b-4 border-yellow-400 pb-2 select-none">Beverages</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <article class="bg-yellow-100 rounded-lg p-4 shadow hover-scale cursor-pointer flex flex-col">
+          <img src="https://images.unsplash.com/photo-1510626176961-4b5c10e867bd?auto=format&fit=crop&w=400&q=80" alt="Golden Turmeric Latte" class="rounded-lg w-full h-48 object-cover mb-4" />
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-xl font-semibold text-amber-900">Golden Turmeric Latte</h3>
+            <span class="text-lg font-semibold text-amber-800">$4.50</span>
+          </div>
+          <p class="text-amber-800 text-sm leading-relaxed flex-grow">Warm milk blended with turmeric, cinnamon, and honey.</p>
+        </article>
+        <article class="bg-yellow-100 rounded-lg p-4 shadow hover-scale cursor-pointer flex flex-col">
+          <img src="https://images.unsplash.com/photo-1550258987-190a2d41a8ba?auto=format&fit=crop&w=400&q=80" alt="Fresh Orange Citrus" class="rounded-lg w-full h-48 object-cover mb-4" />
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-xl font-semibold text-amber-900">Fresh Orange Citrus</h3>
+            <span class="text-lg font-semibold text-amber-800">$3.99</span>
+          </div>
+          <p class="text-amber-800 text-sm leading-relaxed flex-grow">Juicy oranges freshly squeezed for a refreshing citrus drink.</p>
+        </article>
+        <article class="bg-yellow-100 rounded-lg p-4 shadow hover-scale cursor-pointer flex flex-col">
+          <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&w=400&q=80" alt="Chamomile Honey Tea" class="rounded-lg w-full h-48 object-cover mb-4" />
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-xl font-semibold text-amber-900">Chamomile Honey Tea</h3>
+            <span class="text-lg font-semibold text-amber-800">$4.25</span>
+          </div>
+          <p class="text-amber-800 text-sm leading-relaxed flex-grow">Soothing chamomile tea with a hint of natural honey.</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-yellow-300 text-amber-900 text-center py-6 border-t border-yellow-400 select-none">
+    &copy; 2025 Sunny Bites. All rights reserved.
+  </footer>
+
+</body>
+</html>
